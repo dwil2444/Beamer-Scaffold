@@ -1,0 +1,44 @@
+\documentclass[10pt]{beamer}
+
+%Theme choice
+\usetheme{Warsaw}
+
+%some cool packages
+\usepackage{amsmath}
+\usepackage{bibentry}
+\usepackage{algorithm,algpseudocode}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[bottom]{footmisc}
+\usepackage[style=verbose,autocite=footnote]{biblatex}
+
+
+\title{A Causal View on Robustness of Neural Networks}
+\author{Dane Williamson}
+\institute{UVA - ILP \& Less Lab}
+\date{\today}
+\addbibresource{ref/ref.bib}
+\begin{document}
+
+    \begin{frame}
+        \titlepage
+    \end{frame}
+
+    % outline frame
+    \begin{frame}
+        \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+    \end{frame}
+
+    \section{Related Work}
+        \input{text/motivation.tex}
+        \input{text/adversarial.tex}
+
+    \section{Causal Reasoning}
+        \input{text/causalreasoning.tex}
+
+    \begin{frame}[allowframebreaks]
+        \printbibliography
+    \end{frame} 
+    
+
+\end{document}
