@@ -6,7 +6,11 @@ else
     echo "No output dir, creating directory"
     mkdir output
 fi
-pdflatex -halt-on-error --output-directory=./output main
+biber main
+pdflatex main
+biber main
+pdflatex main
+pdflatex main
 mv output/main.pdf ./
 
 mkdir temp
